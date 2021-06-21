@@ -16,3 +16,6 @@
 
 #### Known Bugs
 1. [Limit of 100 Records per Zone](https://git.aylo.net/noauth/cloudflare-audit/-/issues/1)
+
+
+This tool is updated at https://git.aylo.net/aylo/systems/apps/cloudflare-audit
