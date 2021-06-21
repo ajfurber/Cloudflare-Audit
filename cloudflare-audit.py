@@ -42,15 +42,6 @@ def get_zones(silent):
         
     return(cloudflare_zones_list)
 
-def get_zone_names():
-    cloudflare_zones_list = []
-    cloudflare_zones_raw = requests.get("https://api.cloudflare.com/client/v4/zones", headers=cloudflare_headers)
-    load = json.loads(cloudflare_zones_raw.content)
-    zone_response = json.loads(json.dumps(load['result']))
-    for zone in zone_response:
-        cloudflare_zones_list.append(zone["name"])
-        
-    return(cloudflare_zones_list)
 
 def get_zone_records(zoneid):
     zone_file_export = open((date_now+"-"+zoneid+".csv"), "w")
