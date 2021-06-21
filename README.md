@@ -13,3 +13,6 @@
 #### References  
 * https://realpython.com/python-send-email/
 * https://api.cloudflare.com/
+
+#### Known Bugs
+1. [Limit of 100 Records per Zone](https://git.aylo.net/noauth/cloudflare-audit/-/issues/1)
