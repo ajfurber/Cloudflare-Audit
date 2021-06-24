@@ -71,8 +71,8 @@ def send_mail():
     audit_file_txt = audit_file.read()
     message = MIMEMultipart("alternative")
     message["Subject"] = ("CloudFlare Audit - " + date_now)
-    message["From"] = "%TO%"
-    message["To"] = "%FROM%"
+    message["From"] = sender_email
+    message["To"] = reviever_email
 
     part1 = MIMEText(audit_file_txt, "plain")
     message.attach(part1)
